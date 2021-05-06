@@ -11,7 +11,7 @@ public class TripServiceTest {
 
     @Test
     @DisplayName("Test CollaboratCallException in get trips by user method")
-    void CollaboratorCallExceptionTest()
+    void collaboratorCallExceptionTest()
     {
         User user = new User();
         TripService trip = new TripService();
@@ -20,10 +20,13 @@ public class TripServiceTest {
 
     @Test
     @DisplayName("Test UserNotLoggedInException in get trips method")
-    void UserNotLoggedInExceptionTest()
+    void userNotLoggedInExceptionTest()
     {
         TripService trip = new TripService();
         Assertions.assertThrows(UserNotLoggedInException.class, ()-> trip.getTrips(null, null, null, false));
     }
+
+    @Test
+    void
 	
 }
