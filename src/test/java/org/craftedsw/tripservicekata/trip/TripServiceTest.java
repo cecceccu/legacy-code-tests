@@ -25,8 +25,5 @@ public class TripServiceTest {
         TripService trip = new TripService();
         Assertions.assertThrows(UserNotLoggedInException.class, ()-> trip.getTrips(null, null, null, false));
     }
-
-    @Test
-    void
 	
 }
